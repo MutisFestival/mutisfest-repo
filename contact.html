@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Person | MutisFest 3.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons CDN -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    
+    <style>
+      /* Tambahan style khusus untuk halaman contact */
+      .links.contact-tabs {
+        gap: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Tombol Ikhwan */
+      .link-item.ikhwan {
+        background: #b66565;
+        transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .link-item.ikhwan:hover {
+        background: #8e4b4b;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 6px 18px rgba(182, 101, 101, 0.4);
+      }
+
+      /* Tombol Akhwat */
+      .link-item.akhwat {
+        background: #d88a8a;
+        transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .link-item.akhwat:hover {
+        background: #a35c5c;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 6px 18px rgba(211, 136, 136, 0.4);
+      }
+
+      /* Tombol kembali */
+      .link-item.back-btn {
+        background: transparent;
+        color: #6e2c2c;
+        border: 2px solid #c06e6e;
+        transition: all 0.4s ease;
+      }
+
+      .link-item.back-btn:hover {
+        background: #c06e6e;
+        color: #fff;
+      }
+
+      /* Smooth fade untuk semua elemen */
+      .container > * {
+        opacity: 0;
+        animation: fadeUpSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+
+      @keyframes fadeUpSmooth {
+        from {
+          opacity: 0;
+          transform: translateY(35px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+      <link rel="icon" type="image/svg=xml" href="img/favicon.svg" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="profile-name">Contact Person</h1>
+
+      <!-- Dua tab utama -->
+      <section class="links contact-tabs">
+        <a href="contact-ikhwan.html" class="link-item">
+          <i data-lucide="users"></i>
+          <span>Contact Ikhwan</span>
+        </a>
+
+        <a href="contact-akhwat.html" class="link-item">
+          <i data-lucide="users"></i>
+          <span>Contact Akhwat</span>
+        </a>
+      </section>
+
+      <!-- Tombol kembali -->
+      <a href="index.html" class="link-item back-btn">
+        <i data-feather="arrow-left"></i>
+        <span>Kembali</span>
+      </a>
+
+      <footer class="footer">
+        <p>© 2025 MutisFest</p>
+      </footer>
+    </main>
+
+    <!-- Inisialisasi Feather & Lucide Icons -->
+    <script>
+      // Jalankan Feather Icons
+      feather.replace();
+
+      // Jalankan Lucide Icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
