@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Akhwat | MutisFest 3.0</title>
+    <link rel="stylesheet" href="style.css" />
+<!-- Feather Icons CDN -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* Warna dan animasi lembut */
+      .link-item.wa {
+        background: #d88a8a;
+        transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .link-item.wa:hover {
+        background: #a35c5c;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 6px 18px rgba(211, 136, 136, 0.4);
+      }
+
+      .link-item.back-btn {
+        background: transparent;
+        color: #6E2C2C;
+        border: 2px solid #c06e6e;
+        transition: all 0.4s ease;
+      }
+      .link-item.back-btn:hover {
+        background: #c06e6e;
+        color: #fff;
+      }
+
+      .container > * {
+        opacity: 0;
+        animation: fadeUpSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      @keyframes fadeUpSmooth {
+        from {
+          opacity: 0;
+          transform: translateY(35px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+      <link rel="icon" type="image/svg=xml" href="img/favicon.svg" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="profile-name">Contact Akhwat</h1>
+
+      <section class="links">
+        <a href="https://wa.me/6282258301691" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>MHQ — Tyara</span>
+        </a>
+        <a href="https://wa.me/6282210032990" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>Pidato Bahasa Arab — Jihan</span>
+        </a>
+        <a href="https://wa.me/6281387895454" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>Storytelling — Aleesha</span>
+        </a>
+        <a href="https://wa.me/6285777477781" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>Olimpiade Sains — Fikria</span>
+        </a>
+        <a href="https://wa.me/6282249816838" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>Olimpiade Matematika — Umaimah</span>
+        </a>
+        <a href="https://wa.me/6285881579179" class="link-item wa" target="_blank">
+          <i data-feather="message-circle"></i>
+          <span>Poster — Humaira</span>
+        </a>
+      </section>
+
+      <a href="contact.html" class="link-item back-btn">
+        <i data-feather="arrow-left"></i>
+        <span>Kembali</span>
+      </a>
+
+      <footer class="footer">
+        <p>© 2025 MutisFest</p>
+      </footer>
+    </main>
+
+    <!-- Inisialisasi Feather & Lucide Icons -->
+<script>
+  // Jalankan Feather Icons
+  feather.replace();
+
+  // Jalankan Lucide Icons
+  lucide.createIcons();
+</script>
+
+  </body>
+</html>
