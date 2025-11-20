@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Ikhwan | MutisFest 3.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons CDN -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* Warna dan animasi lembut */
+      .link-item.wa {
+        background: #b66565;
+        transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      .link-item.wa:hover {
+        background: #8e4b4b;
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 6px 18px rgba(182, 101, 101, 0.4);
+      }
+
+      .link-item.back-btn {
+        background: transparent;
+        color: #6E2C2C;
+        border: 2px solid #c06e6e;
+        transition: all 0.4s ease;
+      }
+      .link-item.back-btn:hover {
+        background: #c06e6e;
+        color: #fff;
+      }
+
+      .container > * {
+        opacity: 0;
+        animation: fadeUpSmooth 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      }
+      @keyframes fadeUpSmooth {
+        from {
+          opacity: 0;
+          transform: translateY(35px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+      <link rel="icon" type="image/svg=xml" href="img/favicon.svg" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="profile-name">Grup Whatsapp</h1>
+
+      <section class="links">
+        <a href="https://chat.whatsapp.com/GeQUfxK2ttFCRza1PWGNbJ?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup MHQ</span>
+        </a>
+        <a href="https://chat.whatsapp.com/E5WuCZrOzkD7KXCjw0T3W2?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup Khitobah </span>
+        </a>
+        <a href="https://chat.whatsapp.com/FsrplZwh2UG8mOVAJqMqi7?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup Storytelling</span>
+        </a>
+        <a href="https://chat.whatsapp.com/EVioNMSFRp5KBouElxbvPE?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup Olimpiade Sains</span>
+        </a>
+        <a href="https://chat.whatsapp.com/HGZa6rTutCWI5Ha9HtYIWF?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup Olimpiade Matematika</span>
+        </a>
+        <a href="https://chat.whatsapp.com/E5JcPOizo9s3j4836i1vwC?mode=wwt" class="link-item wa" target="_blank">
+          <i data-feather="users"></i>
+          <span>Link Grup Poster</span>
+        </a>
+      </section>
+
+      <a href="index.html" class="link-item back-btn">
+        <i data-feather="arrow-left"></i>
+        <span>Kembali</span>
+      </a>
+
+      <footer class="footer">
+        <p>© 2025 MutisFest</p>
+      </footer>
+    </main>
+
+<!-- Inisialisasi Feather & Lucide Icons -->
+<script>
+  // Jalankan Feather Icons
+  feather.replace();
+
+  // Jalankan Lucide Icons
+  lucide.createIcons();
+</script>
+
+  </body>
+</html>
