@@ -228,6 +228,7 @@ body {
   top: 0;
   width: 100%;
   position: fixed;
+  z-index: 9999999999999;
 }
 .information p {
   margin: 0;
@@ -243,3 +244,4 @@ body {
 .information a:hover {
   color: #121649;
 }
+
