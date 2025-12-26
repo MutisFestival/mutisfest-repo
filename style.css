@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 /* === Container === */
@@ -216,4 +217,29 @@ body {
 .contact-buttons a:hover i {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+.information {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  top: 0;
+  width: 100%;
+  position: fixed;
+}
+.information p {
+  margin: 0;
+  font-family: helvetica;
+  letter-spacing: 0.5px;
+}
+.information a {
+  color: #721c24;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.information a:hover {
+  color: #121649;
 }
